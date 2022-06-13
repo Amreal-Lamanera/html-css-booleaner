@@ -56,6 +56,10 @@ img {
     margin: 20px 0;
 }
 
+.content .yellow-content {
+    background-color: yellow;
+}
+
 /* Section - content - lista */
 .content ul {
     padding: 20px;
@@ -80,6 +84,6 @@ img {
     background-color: blue;
 }
 
-.content table tbody tr {
+.content table .aqua-row {
     background-color: aqua;
 }
