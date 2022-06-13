@@ -32,6 +32,12 @@ img {
 
 /* Inizio stile Container */
 /* Header */
+#header-title {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 #header-title .author {
     color: grey;
 }
