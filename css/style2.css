@@ -33,7 +33,7 @@ img {
 /* Inizio stile Container */
 /* Header */
 #header-title {
-    margin-bottom: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
 }
