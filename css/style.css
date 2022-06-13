@@ -22,3 +22,22 @@ img {
 }
 
 /* Fine testa */
+
+/* Inizio stile Container */
+/* Header */
+#header-title h1 {
+    font-size: 1.8em;
+}
+
+#header-title .author {
+    color: grey;
+    font-size: 0.8em;
+}
+
+#header-title .author-name {
+    color: #20A9E5;
+}
+
+#header-title .author.date {
+    font-size: 0.6em;
+}
