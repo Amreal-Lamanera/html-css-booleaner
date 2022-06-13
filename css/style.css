@@ -1,3 +1,5 @@
+/* Svolgimento esercizio standard */
+
 /* CSS Reset & Stili Globali */
 * {
     margin: 0;
@@ -25,13 +27,8 @@ img {
 
 /* Inizio stile Container */
 /* Header */
-#header-title h1 {
-    font-size: 1.8em;
-}
-
 #header-title .author {
     color: grey;
-    font-size: 0.8em;
 }
 
 #header-title .author-name {
@@ -39,5 +36,49 @@ img {
 }
 
 #header-title .author.date {
-    font-size: 0.6em;
+    font-size: 0.8em;
+}
+
+/* Fine header */
+
+/* Inizio main */
+/* Section - foto */
+.photos img {
+    height: 350px;
+}
+
+.photos h6 {
+    font-weight: normal;
+}
+
+/* Section - content - paragrafo */
+.content>* {
+    margin: 20px 0;
+}
+
+/* Section - content - lista */
+.content ul {
+    padding: 20px;
+}
+
+/* Section - content - tabella */
+.content table {
+    text-align: left;
+}
+
+.content th,
+.content td {
+    width: 15%;
+}
+
+.content table .third-cell {
+    width: 70%;
+}
+
+.content table thead tr {
+    background-color: blue;
+}
+
+.content table tbody tr {
+    background-color: aqua;
 }
