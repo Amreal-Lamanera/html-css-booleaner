@@ -52,38 +52,40 @@ img {
 }
 
 /* Section - content - paragrafo */
-.content>* {
+section>* {
     margin: 20px 0;
 }
 
-.content .yellow-content {
+.yellow-content {
     background-color: yellow;
 }
 
 /* Section - content - lista */
-.content ul {
-    padding: 20px;
+ul {
+    padding: 0 20px;
 }
 
 /* Section - content - tabella */
-.content table {
+table {
     text-align: left;
     border-collapse: collapse;
 }
 
-.content th,
-.content td {
+th,
+td {
     width: 15%;
 }
 
-.content table .third-cell {
+table .third-cell {
     width: 70%;
 }
 
-.content table thead tr {
+table thead tr {
     background-color: blue;
 }
 
-.content table .aqua-row {
+table .aqua-row {
     background-color: aqua;
 }
+
+/* Footer */
