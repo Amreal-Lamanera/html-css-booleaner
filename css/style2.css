@@ -12,7 +12,7 @@ img {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -65,29 +65,18 @@ section {
 /* Section foto */
 .photos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+    justify-content: center;
 }
 
+.photo-img img {
+    margin-right: 50px;
+}
 
 
 /* Section - content - tabella */
 table {
     text-align: left;
     border-collapse: collapse;
-    width: 70%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-th,
-td {
-    width: 15%;
-}
-
-table .third-cell {
-    width: 20%;
 }
 
 table thead tr {
