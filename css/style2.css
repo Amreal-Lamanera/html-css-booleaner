@@ -21,7 +21,6 @@ img {
     background-image: url(../img/pattern.png);
     background-color: rgba(80, 140, 208, 0.8);
     background-size: 25%;
-    height: 15vh;
 }
 
 #header-pattern img {
