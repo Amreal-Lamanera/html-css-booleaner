@@ -1,0 +1,21 @@
+/* CSS Reset & Stili Globali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header-pattern {
+    background-image: url(../img/pattern.png);
+    background-color: #4ea0ff;
+    background-size: 25%;
+}
+
+#header-pattern img {
+    width: 13%;
+    margin: 5vh 0 0 10px;
+}
