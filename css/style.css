@@ -64,6 +64,7 @@ img {
 /* Section - content - tabella */
 .content table {
     text-align: left;
+    border-collapse: collapse;
 }
 
 .content th,
