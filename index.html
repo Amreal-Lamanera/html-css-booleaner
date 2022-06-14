@@ -30,7 +30,10 @@
                         <div class="title-container">
                             <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee
                             </h1>
-                            <span class="author">Scritto da <span class="author-name">The Booleaner</span></span>
+                            <span class="author">Scritto da
+                                <!-- Avrei potuto usare il tag address -->
+                                <a href="#" class="author-name">The Booleaner</a>
+                            </span>
                             <!-- Utilizzo br per andare a capo -->
                             <br>
                             <span class="author date">il 10/10/2020</span>
@@ -38,118 +41,110 @@
                     </div>
                 </header>
 
+                <!-- CORREZIONE: meglio non usare section, in quanto, come avevo notato, non conosco il contenuto e non ho degli H -->
                 <!-- Sezione foto -->
-                <section>
-                    <div class="photo-img">
-                        <img src="img/tim-1.jpg" alt="Foto di Tim Berners-Lee 1">
-                        <img src="img/tim-2.jpg" alt="Foto di Tim Berners-Lee 2">
-                        <!-- Utilizzo h6 e non p perché section per essere corretto deve contenere almeno un tag h -->
-                        <h6>
-                            1st Photo: jhon S. and James L., Knight Foundation, by Soul Henrichsen
-                        </h6>
-                        <h6>
-                            2nd Photo: Wikimedia by Paul Clarke
-                        </h6>
-                    </div>
-                </section>
+                <!-- Meglio usare figure che è un tag semantico per le immagini con <figcaption> per la didascalia -->
+                <figure class="photos">
+                    <img src="img/tim-1.jpg" alt="Foto di Tim Berners-Lee 1">
+                    <img src="img/tim-2.jpg" alt="Foto di Tim Berners-Lee 2">
+                    <!-- Utilizzo h6 e non p perché section per essere corretto deve contenere almeno un tag h -->
+                    <figcaption>
+                        1st Photo: jhon S. and James L., Knight Foundation, by Soul Henrichsen <br>
+                        2nd Photo: Wikimedia by Paul Clarke
+                    </figcaption>
+                </figure>
 
-                <!-- Avrei potuto utilizzare article qua? -->
-                <!-- Sezione Paragrafo 1 -->
-                <section>
-                    <!-- Il contenuto dovrebbe avere almeno un h per essere semanticamente corretto -->
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae dignissimos eum nobis
-                            sequi aut ullam repellat, sit neque illo fugit corporis asperiores saepe molestias nam
-                            veniam amet minima! Quibusdam?
-                            Fugit ducimus reiciendis minus quibusdam reprehenderit! Hic error quisquam exercitationem
-                            dignissimos a quidem dolore fuga <span class="yellow-content">tenetur perferendis
-                                porro!</span> Numquam vitae perspiciatis iure
-                            adipisci ad praesentium nobis distinctio commodi explicabo. Voluptas!
-                            Error architecto perspiciatis delectus est eaque ullam repellendus et doloremque molestiae
-                            vero laboriosam placeat mollitia, incidunt recusandae quidem ea autem qui eos provident
-                            laborum, totam minima ipsa nemo! Deleniti, itaque.
-                        </p>
-                    </div>
-                </section>
+                <!-- Paragrafo 1 -->
+                <!-- Il contenuto dovrebbe avere almeno un h per essere semanticamente corretto -->
+                <div class="main-paragraph">
+                    <!-- Per evidenziare, se avessi avuto un significato semantico di importanza, sarebbe stato meglio usare <strong> e poi personalizzarlo, anche togliendo il grassetto -->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae dignissimos eum nobis
+                        sequi aut ullam repellat, sit neque illo fugit corporis asperiores saepe molestias nam
+                        veniam amet minima! Quibusdam?
+                        Fugit ducimus reiciendis minus quibusdam reprehenderit! Hic error quisquam exercitationem
+                        dignissimos a quidem dolore fuga <span class="yellow-content">tenetur perferendis
+                            porro!</span> Numquam vitae perspiciatis iure
+                        adipisci ad praesentium nobis distinctio commodi explicabo. Voluptas!
+                        Error architecto perspiciatis delectus est eaque ullam repellendus et doloremque molestiae
+                        vero laboriosam placeat mollitia, incidunt recusandae quidem ea autem qui eos provident
+                        laborum, totam minima ipsa nemo! Deleniti, itaque.
+                    </p>
+                </div>
 
-                <!-- Sezione lista -->
-                <section>
-                    <div>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic assumenda nisi
-                                quas tempora voluptatem voluptates. Voluptates recusandae iusto, sequi eum odit quae
-                                asperiores eaque deleniti et, esse explicabo sint.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, animi eius beatae
-                                perspiciatis ipsam quod. Excepturi quaerat omnis placeat ipsum sint, perferendis, nisi,
-                                quos rerum exercitationem minima hic quo amet.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo nulla
-                                incidunt quibusdam vel minima eligendi at id ex? Hic beatae doloremque esse magnam, vero
-                                voluptas maxime molestiae nostrum vitae?</li>
-                        </ul>
-                    </div>
-                </section>
+                <!-- lista -->
+                <div class="main-list">
+                    <!-- posso crearla con ul>li*3 -->
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic assumenda nisi
+                            quas tempora voluptatem voluptates. Voluptates recusandae iusto, sequi eum odit quae
+                            asperiores eaque deleniti et, esse explicabo sint.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, animi eius beatae
+                            perspiciatis ipsam quod. Excepturi quaerat omnis placeat ipsum sint, perferendis, nisi,
+                            quos rerum exercitationem minima hic quo amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo nulla
+                            incidunt quibusdam vel minima eligendi at id ex? Hic beatae doloremque esse magnam, vero
+                            voluptas maxime molestiae nostrum vitae?</li>
+                    </ul>
+                </div>
 
-                <!-- Sezione tabella -->
-                <section>
-                    <div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Lorem, ipsum dolor.</th>
-                                    <th>Lorem, ipsum dolor.</th>
-                                    <th class="third-cell">Lorem, ipsum dolor.</th>
-                                </tr>
-                            </thead>
+                <!--  tabella -->
+                <div class="main-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem, ipsum dolor.</th>
+                                <th>Lorem, ipsum dolor.</th>
+                                <th class="w-50">Lorem, ipsum dolor.</th>
+                            </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr class="aqua-row">
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td class="third-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Quaerat est fugit vel
-                                        exercitationem voluptatum harum nisi dolor eius beatae consequatur iste eveniet
-                                        quisquam praesentium laudantium, ex maiores amet illum nemo.</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td class="third-cell">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Amet, quasi. Sapiente
-                                        enim obcaecati aut, quae blanditiis suscipit accusamus praesentium a laborum
-                                        adipisci aspernatur quibusdam, illum rerum repudiandae aliquid ipsa non.</td>
-                                </tr>
-                                <tr class="aqua-row">
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td>Lorem, ipsum dolor.</td>
-                                    <td class="third-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Alias aliquid fuga, est
-                                        reiciendis quasi laudantium error atque enim tempore ab consectetur repellat
-                                        corporis dicta dignissimos, delectus vel nostrum cupiditate nihil.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                        <tbody>
+                            <!-- Posso generarla con tr*3>td*3 -->
+                            <tr class="odd">
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quaerat est fugit vel
+                                    exercitationem voluptatum harum nisi dolor eius beatae consequatur iste eveniet
+                                    quisquam praesentium laudantium, ex maiores amet illum nemo.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Amet, quasi. Sapiente
+                                    enim obcaecati aut, quae blanditiis suscipit accusamus praesentium a laborum
+                                    adipisci aspernatur quibusdam, illum rerum repudiandae aliquid ipsa non.</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem, ipsum dolor.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Alias aliquid fuga, est
+                                    reiciendis quasi laudantium error atque enim tempore ab consectetur repellat
+                                    corporis dicta dignissimos, delectus vel nostrum cupiditate nihil.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <!-- Sezione Paragrafo 2 -->
-                <section>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae dignissimos eum nobis
-                            sequi aut ullam repellat, sit neque illo fugit corporis asperiores saepe molestias nam
-                            veniam amet minima! Quibusdam?
-                            Fugit ducimus reiciendis minus quibusdam reprehenderit! Hic error quisquam exercitationem
-                            dignissimos a quidem dolore fuga tenetur perferendis
-                            porro! Numquam vitae perspiciatis iure
-                            adipisci ad praesentium nobis distinctio commodi explicabo. Voluptas!
-                            Error architecto perspiciatis delectus est eaque ullam repellendus et doloremque molestiae
-                            vero laboriosam placeat mollitia, <span class="yellow-content">incidunt recusandae quidem ea
-                                autem qui eos provident
-                                laborum, totam minima ipsa nemo!</span> Deleniti, itaque.
-                        </p>
-                    </div>
-                </section>
+                <!-- Paragrafo 2 -->
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae dignissimos eum nobis
+                        sequi aut ullam repellat, sit neque illo fugit corporis asperiores saepe molestias nam
+                        veniam amet minima! Quibusdam?
+                        Fugit ducimus reiciendis minus quibusdam reprehenderit! Hic error quisquam exercitationem
+                        dignissimos a quidem dolore fuga tenetur perferendis
+                        porro! Numquam vitae perspiciatis iure
+                        adipisci ad praesentium nobis distinctio commodi explicabo. Voluptas!
+                        Error architecto perspiciatis delectus est eaque ullam repellendus et doloremque molestiae
+                        vero laboriosam placeat mollitia, <span class="yellow-content">incidunt recusandae quidem ea
+                            autem qui eos provident
+                            laborum, totam minima ipsa nemo!</span> Deleniti, itaque.
+                    </p>
+                </div>
             </main>
 
             <footer>

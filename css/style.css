@@ -15,6 +15,14 @@ img {
     padding: 5px;
 }
 
+main>* {
+    margin: 20px 0;
+}
+
+.yellow-content {
+    background-color: yellow;
+}
+
 /* Testa articolo con logo e pattern di sfondo */
 #header-pattern {
     background-image: url("../img/pattern.png");
@@ -37,6 +45,7 @@ img {
 
 #header-title .author-name {
     color: #20A9E5;
+    text-decoration: none;
 }
 
 #header-title .author.date {
@@ -51,17 +60,8 @@ img {
     height: 350px;
 }
 
-.photos h6 {
-    font-weight: normal;
-}
-
-/* Section - content - paragrafo */
-section>* {
-    margin: 20px 0;
-}
-
-.yellow-content {
-    background-color: yellow;
+.photos figcaption {
+    font-size: 0.6em;
 }
 
 /* Section - content - lista */
@@ -70,25 +70,23 @@ ul {
 }
 
 /* Section - content - tabella */
-table {
+.main-table table {
     text-align: left;
     border-collapse: collapse;
+    width: 100%;
 }
 
-th,
-td {
-    width: 15%;
-}
-
-table .third-cell {
-    width: 70%;
-}
-
-table thead tr {
+.main-table thead tr {
     background-color: blue;
+    color: white;
 }
 
-table .aqua-row {
+.w-50 {
+    width: 50%;
+}
+
+
+.main-table tr.odd {
     background-color: aqua;
 }
 
