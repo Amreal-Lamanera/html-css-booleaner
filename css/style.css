@@ -17,7 +17,7 @@ img {
 
 /* Testa articolo con logo e pattern di sfondo */
 #header-pattern {
-    background-image: url(../img/pattern.png);
+    background-image: url("../img/pattern.png");
     background-color: #4ea0ff;
     background-size: 25%;
 }
